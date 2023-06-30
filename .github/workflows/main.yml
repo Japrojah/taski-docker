@@ -73,5 +73,3 @@ jobs:
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
           tags: japrojah/taski_backend:latest
-          tags: japrojah/taski_gateway:latest
-          tags: japrojah/taski_frontend:latest
