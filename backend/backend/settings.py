@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['158.160.29.10', '127.0.0.1', 'localhost', japrojah.servecounterstrike.com]
 
 
 INSTALLED_APPS = [
@@ -62,9 +62,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('POSTGRES_DB', 'django'),
-        'USER': os.getenv('POSTGRES_USER', 'Dima'),
+        'USER': os.getenv('POSTGRES_USER', 'django'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
-        'HOST': 'db'
+        'HOST': os.getenv('DB_HOST', '')
         'PORT': os.getenv('DB_PORT', 5432)
     }
 }
